@@ -1,2 +1,85 @@
+/* General styles */
 body {
+  color: #333232;
+}
+
+a {
+  color: #4E4E89;
+}
+
+a:hover {
+  color: #3B3B53;
+}
+
+/* Header/Nav */
+.primary-header {
+  background: #3B3B53;
+}
+
+.header-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8em 0;
+}
+
+.navbar {
+  color: white;
+}
+
+.navbar-toggler {
+  background: #4E4E89;
+  font-size: 2em;
+}
+
+#exCollapsingNavbar2 .nav-link {
+  color: white;
+}
+
+#exCollapsingNavbar2 .nav-link:hover {
+  color: #EEB029;
+}
+
+/* Components section */
+.components {
+  background: #F4F4F4;
+}
+
+.components-card-wrapper {
+  text-align: center;
+}
+
+.components-card img {
+  width: 120px;
+}
+
+/* Community/Social media */
+.social-media div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+}
+
+.social-media div a {
+  color: #333232;
+}
+
+.social-media div a:hover {
+  color: #EEB029;
+}
+
+/* Footer */
+.footer-primary {
+  text-align: center;
+  background: #333232;
+  color: #F4F4F4;
+  font-size: .7em;
+}
+
+.footer-wrapper img {
+  margin: 0 auto;
+}
+
+.footer-wrapper small {
+  display: block;
 }
