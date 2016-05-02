@@ -23,6 +23,11 @@ a:hover {
   padding: .8em 0;
 }
 
+.header-topbar img {
+  position: relative;
+  align-self: flex-start;
+}
+
 .navbar {
   color: white;
 }
@@ -30,14 +35,25 @@ a:hover {
 .navbar-toggler {
   background: #4E4E89;
   font-size: 2em;
+  flex: 0 0 auto;
 }
 
 #exCollapsingNavbar2 .nav-link {
+  display: block;
+  padding-top: 1.8em;
   color: white;
+  text-align: right;
+  font-size: 1.3em;
 }
 
 #exCollapsingNavbar2 .nav-link:hover {
   color: #EEB029;
+}
+
+/* Hero & lead */
+.hero {
+  background: #4E4E89;
+  color: white;
 }
 
 /* Components section */
@@ -57,7 +73,7 @@ a:hover {
 .social-media div {
   display: flex;
   justify-content: space-between;
-  font-size: 40px;
+  font-size: 2em;
 }
 
 .social-media div a {
