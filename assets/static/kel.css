@@ -37,6 +37,7 @@ a:hover {
 
 .navbar {
   align-self: flex-end;
+  padding: .4em 0;
   color: white;
   text-align: right;
 }
@@ -77,11 +78,22 @@ a:hover {
   width: 120px;
 }
 
+.components-card p {
+  margin: 0 auto;
+  width: 75%;
+}
+
 /* Community/Social media */
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
 .social-media div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 2em;
+  width: 100%;
 }
 
 .social-media div a {
@@ -110,12 +122,12 @@ a:hover {
 
 /* Responsive */
 
-/* Medium and up */
+/* Small and up */
 @media (min-width: 544px) {
   #exCollapsingNavbar2 .nav-link {
     display: inline-block;
     padding-top: 0;
-    padding-right: 15px;
+    padding-right: 1.4em;
     font-size: 1em;
   }
 
@@ -143,10 +155,20 @@ a:hover {
   }
 }
 
-/* Large and up */
+/* Medium and up */
 @media (min-width: 768px) {
   #exCollapsingNavbar2 .nav-link {
     font-size: 1.3em;
+  }
+
+  /* Page divide */
+  .divide-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .divide-content section {
+    width: 50%;
   }
 
   .components-card-wrapper .row {
@@ -158,7 +180,7 @@ a:hover {
   .components-card {
     display: flex;
     text-align: left;
-    width: 45%;
+    width: 40%;
   }
 
   .components-card img {
@@ -167,16 +189,34 @@ a:hover {
     width: 100px;
   }
 
-  .components-details p {
-    width: 80%;
+  .components-card p {
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 }
 
 @media (min-width: 992px) {
+  .primary-header-wrapper {
+    padding: .4em 0;
+  }
+
+  .navbar {
+    padding: .4em 0;
+  }
+
   .components-card {
     display: flex;
     text-align: left;
-    width: 33.3333%;
+    width: 30%;
   }
 
+  .social-media div {
+    font-size: 2.4em;
+  }
 }
