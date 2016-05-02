@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Kel is an open-source Platform as a Service (PaaS) from Eldarion® that makes it easy to manage web application deployment and hosting through the entire software lifecycle.">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" >
+    <meta property="twitter:title" content="" >
+    <meta property="twitter:description" content="Kel is an open-source Platform as a Service (PaaS) from Eldarion® that makes it easy to manage web application deployment and hosting through the entire software lifecycle.">
+    <meta property="twitter:creator" content="@ProjectKel" >
+    <meta property="twitter:url" content="https://twitter.com/ProjectKel" >
+    <!-- <meta property="twitter:image" content="" > -->
+    <title>Kel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- Project CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ '/static/kel.css'|asseturl }}">
+    <link rel="icon" href="/static/images/favicon.png" type="image/png">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="primary-header m-b-3">
+      <div class="primary-header-wrapper container">
+        <div class="header-topbar">
+          <img class="hidden-sm-up" src="/static/images/logo_simple.svg" alt="Kel circular ship logo" width="80px" />
+          <img class="hidden-xs-down" src="/static/images/logo_full.svg" alt="Kel circular ship logo" width="120px" />
+          <nav class="navbar pull-right text-uppercase">
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">&#9776;
+            </button>
+            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+              <a class="nav-item nav-link" href="#">Docs</a>
+              <a class="nav-item nav-link" href="#">Blog</a>
+              <a class="nav-item nav-link" href="#">GitHub</a>
+              <a class="nav-item nav-link" href="https://twitter.com/ProjectKel">Twitter</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="hero-wrapper container">
+        <h1 class="m-t-2">A tag-line here would be super neat.</h1>
+        <p class="lead">
+          On desktop there is an opportunity for a subsection here.
+        </p>
+        <button type="button" class="btn btn-warning">Become a User <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+
+    <section class="about container">
+      <p class="lead m-t-2">
+        Kel&#8482; is an open-source Platform as a Service (PaaS) from <a href="http://eldarion.com/">Eldarion&reg;</a> that makes it easy to manage web application deployment and hosting through the entire software lifecycle. <span>Kel adds components and tools on top of Kubernetes, the popular container orchestration system originally developed by Google that helps DevOps professionals manage their application infrastructure. Kel builds on Eldarion's 7+ years experience running Gondor, one of the leading Python / Django PaaS solutions.</span>
+      </p>
+    </section>
+
+    <section class="components p-t-2 p-b-3">
+      <div class="components-wrapper container">
+        <h2 class="m-t-2">Components</h2>
+        <p>
+          Kel is built on Kubernetes with components written in Python and Go. The following components are a good entryway to understanding the Kel project:
+        </p>
+        <div class="components-card-wrapper container">
+          <div class="row">
+            <div class="components-card col-md-4">
+              <img src="/static/images/api.svg" alt="Illustration represeting how an API works" />
+              <h4>kel-api</h4>
+              <p>
+                RESTful API built with Django / Pinax, adhering to the JSON:API specification
+              </p>
+            </div>
+            <div class="components-card col-md-4">
+              <img src="/static/images/proxy.svg" alt="Illustration representing reverse proxy process" />
+              <h4>kel-router</h4>
+              <p>
+                HTTP/TLS reverse proxy
+              </p>
+            </div>
+            <div class="components-card col-md-4">
+              <img src="/static/images/auth.svg" alt="Illustration representing security and authentication" />
+              <h4>kel-identity</h4>
+              <p>
+                Centralized authentication/authorization for Kel
+              </p>
+            </div>
+            <div class="components-card col-md-4">
+              <img src="/static/images/command.svg" alt="Illustration representing the command line" />
+              <h4>kel</h4>
+              <p>
+                Kel end-user client command-line tool
+              </p>
+            </div>
+            <div class="components-card col-md-4">
+              <img src="/static/images/command_tool.svg" alt="Illustration of command line tools for admins" />
+              <h4>kelctl</h4>
+              <p>
+                Kel cluster admin command-line tool
+              </p>
+            </div>
+            <div class="components-card col-md-4">
+              <img src="/static/images/cluster.svg" alt="Illustration representing cluster management" />
+              <h4>kel-cluster</h4>
+              <p>
+                Kel cluster management Python library
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-danger">View All Repos <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+    </section>
+
+    <section class="community container">
+      <h2 class="m-t-2">Community</h2>
+      <p>
+        In order to foster a kind, inclusive, and harassment-free community, the Kel project follows the <a href="http://contributor-covenant.org/">`Contributor Covenant Code of Conduct’</a>.
+      </p>
+    </section>
+
+    <section class="social-media container">
+      <div>
+        <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-slack" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/ProjectKel"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <section class="license container">
+      <h2 class="m-t-2">License</h2>
+      <p>
+        The code in this project is licensed under the Apache License, version 2.0.
+      </p>
+    </section>
+
+    <section class="support container">
+      <h2 class="m-t-2">Commercial Support</h2>
+      <p>
+        Commercial support for Kel is available through Eldarion&reg;, please contact <a href="mailto:info@eldarion.com">info@eldarion.com</a> for more information.
+      </p>
+    </section>
+
+    <footer class="footer-primary m-t-3 p-a-1">
+      <div class="footerimg-wrapper container">
+        <img src="/static/images/eldarion_logo.svg" alt="Official Eldarion Logo" width="60px" />
+        <small>&copy; 2010–2016 Eldarion, Inc.</small>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
+</html>
