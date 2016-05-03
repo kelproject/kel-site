@@ -48,7 +48,7 @@ a:hover {
   padding: .8em 0;
 }
 
-.header-topbar img {
+.header-topbar a {
   align-self: flex-start;
   -webkit-align-items: flex-start;
 }
@@ -90,7 +90,7 @@ a:hover {
 
 /* Hero & lead */
 .hero {
-  background: #fafafa url(images/bg-pattern.png) center top repeat;
+  background: #fafafa url(/static/images/bg-pattern.png) center top repeat;
   background-size: cover;
   color: white;
 }
