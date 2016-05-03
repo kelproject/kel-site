@@ -6,6 +6,7 @@ Collect static assets, run:
 
     curl https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css > assets/static/css/bootstrap.min.css
     curl https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css > assets/static/css/font-awesome.min.css
+    curl https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/fonts/fontawesome-webfont.woff > assets/static/fonts/fontawesome-webfont.woff
     curl https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js > assets/static/js/jquery.min.js
     curl https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js > assets/static/js/bootstrap.min.js
     curl https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css.map > assets/static/css/bootstrap.min.css.map
