@@ -74,13 +74,9 @@ a:hover {
 
 /* Hero & lead */
 .hero {
-  background: #4E4E89;
+  background: #fafafa url(images/bg-pattern.png) center top repeat;
+  background-size: 200%;
   color: white;
-}
-
-/* About section */
-.about lead {
-  padding: 3em 0;
 }
 
 /* Components section */
@@ -161,6 +157,10 @@ a:hover {
     position: absolute;
   }
 
+  .hero {
+    background: #4E4E89;
+  }
+
   .hero-wrapper {
     margin: 0 auto;
     padding-top: 3em;
@@ -236,10 +236,18 @@ a:hover {
     padding: .4em 0;
   }
 
+  .about .lead {
+    font-size: 1.3em;
+  }
+
   .components-card {
     display: flex;
     text-align: left;
     flex: 0 0 27%;
+  }
+
+  .components-details p {
+    font-size: .95em;
   }
 
   .social-media div {
