@@ -41,6 +41,8 @@ a:hover {
 .header-topbar {
   display: flex;
   justify-content: space-between;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
   position: relative;
   align-items: center;
   padding: .8em 0;
@@ -48,6 +50,7 @@ a:hover {
 
 .header-topbar img {
   align-self: flex-start;
+  -webkit-align-items: flex-start;
 }
 
 .navbar {
@@ -56,6 +59,11 @@ a:hover {
   justify-content: flex-start;
   align-items: flex-end;
   align-self: flex-start;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: flex-start;
+  -webkit-align-items: flex-end;
+  -webkit-align-self: flex-start;
   padding: 1.3em 0 .5em;
   color: white;
   text-align: right;
@@ -66,6 +74,7 @@ a:hover {
   background: #4E4E89;
   font-size: 2em;
   flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
 }
 
 #exCollapsingNavbar2 .nav-link {
@@ -82,7 +91,7 @@ a:hover {
 /* Hero & lead */
 .hero {
   background: #fafafa url(images/bg-pattern.png) center top repeat;
-  background-size: 200%;
+  background-size: cover;
   color: white;
 }
 
@@ -108,11 +117,15 @@ a:hover {
 .social-media {
   display: flex;
   align-items: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
 }
 
 .social-media div {
   display: flex;
   justify-content: space-around;
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
   font-size: 2em;
   width: 100%;
 }
@@ -190,6 +203,8 @@ a:hover {
   .divide-content {
     display: flex;
     flex-wrap: wrap;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
   }
 
   .divide-content section {
@@ -200,17 +215,23 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-between;
   }
 
   .components-card {
     display: flex;
-    text-align: left;
     flex: 0 0 45%;
+    display: -webkit-flex;
+    -webkit-flex: 0 0 45%;
+    text-align: left;
   }
 
   .components-card img {
     margin-right: .8em;
     align-self: flex-start;
+    -webkit-align-self: flex-start;
     width: 100px;
   }
 
@@ -222,6 +243,9 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
     width: 100%;
   }
 
@@ -249,8 +273,10 @@ a:hover {
 
   .components-card {
     display: flex;
-    text-align: left;
     flex: 0 0 27%;
+    display: -webkit-flex;
+    -webkit-flex: 0 0 27%;
+    text-align: left;
   }
 
   .components-details p {
