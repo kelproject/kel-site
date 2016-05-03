@@ -26,6 +26,13 @@ a:hover {
   display: none;
 }
 
+.OptimaLTStd-ExtraBlack {
+	font-family: OptimaLTStd-ExtraBlack;
+	font-weight: normal;
+	font-style: normal;
+  line-height: 1.5;
+}
+
 /* Header/Nav */
 .primary-header {
   background: #3B3B53;
