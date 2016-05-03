@@ -95,6 +95,10 @@ a:hover {
   color: white;
 }
 
+.hero-wrapper h1 {
+  font-size: 1.8em;
+}
+
 /* Components section */
 .components {
   background: #F4F4F4;
@@ -111,6 +115,10 @@ a:hover {
 .components-card p {
   margin: 0 auto;
   width: 75%;
+}
+
+.components-button {
+  text-align: center;
 }
 
 /* Community/Social media */
@@ -188,6 +196,10 @@ a:hover {
     width: 65%;
   }
 
+  .hero-wrapper h1 {
+    font-size: 2.1em;
+  }
+
   .about {
     width: 65%;
   }
@@ -197,6 +209,10 @@ a:hover {
 @media (min-width: 768px) {
   #exCollapsingNavbar2 .nav-link {
     font-size: 1.3em;
+  }
+
+  .hero-wrapper h1 {
+    font-size: 2.5em;
   }
 
   /* Page divide */
