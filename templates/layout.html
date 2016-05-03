@@ -15,13 +15,13 @@
     <!-- <meta property="twitter:image" content="" > -->
     <title>Kel</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/static/css/bootstrap.min.css'|asseturl }}" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd">
     <!-- Project CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ '/static/kel.css'|asseturl }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/kel.css'|asseturl }}">
     <link rel="icon" href="/static/images/favicon.png" type="image/png">
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ '/static/css/fontawesome.min.css'|asseturl }}">
   </head>
   <body>
     <header class="primary-header">
@@ -33,9 +33,9 @@
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">&#9776;
             </button>
             <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-              <a class="nav-item nav-link" href="#">Docs</a>
+              <a class="nav-item nav-link" href="http://docs.kelproject.com">Docs</a>
               <!--<a class="nav-item nav-link" href="#">Blog</a>-->
-              <a class="nav-item nav-link" href="#">GitHub</a>
+              <a class="nav-item nav-link" href="https://github.com/kelproject">GitHub</a>
               <a class="nav-item nav-link" href="https://twitter.com/ProjectKel">Twitter</a>
             </div>
           </nav>
@@ -169,7 +169,7 @@
     </footer>
 
     <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="{{ '/static/js/jquery.min.js'|asseturl }}"></script>
+    <script src="{{ '/static/js/bootstrap.min.js'|asseturl }}" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"></script>
   </body>
 </html>
