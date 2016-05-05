@@ -108,6 +108,24 @@ a:hover {
   text-align: center;
 }
 
+.components-card {
+  color: #3B3B53;
+  text-decoration: none;
+  display: block;
+}
+
+.components-card:hover {
+  text-decoration: none;
+}
+
+.components-card:hover h4 {
+  color: #EEB029;
+}
+
+.components-card:hover p {
+  color: #4E4E89;
+}
+
 .components-card img {
   width: 120px;
 }
