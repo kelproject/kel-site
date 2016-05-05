@@ -16,19 +16,25 @@ Collect static assets, run:
 
 To prepare, run:
 
-    gsutil mb gs://stage.kelproject.com
-    gsutil defacl ch -u AllUsers:R gs://stage.kelproject.com/
+    gsutil mb gs://www.kelproject.com
+    gsutil defacl ch -u AllUsers:R gs://www.kelproject.com/
     lektor build
-    gsutil -m rsync -d -r $(lektor project-info --output-path) gs://stage.kelproject.com
-    gsutil -m setmeta -h "Cache-Control:private,max-age=0,no-transform" gs://stage.kelproject.com/**
-    gsutil web set -m index.html -e 404.html gs://stage.kelproject.com
+    gsutil -m rsync -d -r $(lektor project-info --output-path) gs://www.kelproject.com
+    gsutil -m setmeta -h "Cache-Control:private,max-age=0,no-transform" gs://www.kelproject.com/**
+    gsutil web set -m index.html -e 404.html gs://www.kelproject.com
 
 ## Deploy
 
 To deploy, run:
 
     lektor build
-    gsutil -m rsync -d -r $(lektor project-info --output-path) gs://stage.kelproject.com
+    gsutil -m rsync -c -d -r $(lektor project-info --output-path) gs://stage.kelproject.com
     gsutil -m setmeta -h "Cache-Control:private,max-age=0,no-transform" gs://stage.kelproject.com/**
+
+To deploy to production, run:
+
+    lektor build
+    gsutil -m rsync -c -d -r $(lektor project-info --output-path) gs://kelproject.com
+    gsutil -m setmeta -h "Cache-Control:private,max-age=0,no-transform" gs://kelproject.com/**
 
 TODO: improve the `setmeta` command to cache some files.
