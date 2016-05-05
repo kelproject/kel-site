@@ -60,7 +60,7 @@
 
     <section class="about container p-t-2 p-b-2">
       <p class="lead m-t-2">
-        Kel&#8482; is an open-source Platform as a Service (PaaS) from <a href="http://eldarion.com/">Eldarion<sup>&reg;</sup></a> that makes it easy to manage web application deployment and hosting through the entire software lifecycle.
+        Kel&#8482; is an open-source Platform as a Service (PaaS) from <a href="http://eldarion.com/">Eldarion</a><sup>&reg;</sup> that makes it easy to manage web application deployment and hosting through the entire software lifecycle.
       </p>
       <p class="lead m-b-2">
         Kel helps DevOps professionals manage their application infrastructure through a layer of tools and components that make Kubernetes accessible and easier to use. Kel builds on Eldarion's 7+ years experience running Gondor, one of the leading Python / Django PaaS solutions.
@@ -177,5 +177,31 @@
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="{{ '/static/js/jquery.min.js'|asseturl }}"></script>
     <script src="{{ '/static/js/bootstrap.min.js'|asseturl }}" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"></script>
+
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t = document.createElement('script');
+        t.type = 'text/javascript';
+        t.async = true;
+        t.id = 'gauges-tracker';
+        t.setAttribute('data-site-id', '57129ec7c88d904f1b00ff21');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2401894-51']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackPageLoadTime']);
+      // _gaq.push(['_setCustomVar', 1, 'Authentication Type', ut, 2]);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </body>
 </html>
