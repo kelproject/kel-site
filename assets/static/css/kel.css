@@ -205,7 +205,8 @@ a:hover {
 }
 
 #in-the-news .content,
-#press-releases .content {
+#press-releases .content,
+#press-inquiries .content {
   text-align: center;
   max-width: 750px;
   margin: 0 auto;
@@ -217,7 +218,8 @@ a:hover {
 }
 
 #in-the-news h4,
-#press-releases h4 {
+#press-releases h4,
+#press-inquiries h4 {
   margin-bottom: 1em;
 }
 
@@ -319,7 +321,7 @@ a:hover {
 /* Medium and up */
 @media (min-width: 768px) {
   #exCollapsingNavbar2 .nav-link {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .hero-wrapper h1 {
@@ -382,6 +384,10 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+  #exCollapsingNavbar2 .nav-link {
+    font-size: 1.3em;
+  }
+
   p {
     font-size: 1.1em;
   }

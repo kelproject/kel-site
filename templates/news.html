@@ -9,8 +9,9 @@
       <h1 class="OptimaLTStd-ExtraBlack m-t-2 m-b-1">News</h1>
       <nav class="subnav">
         <ul>
-          <li><a href="#in-the-news">In the news</a></li>
-          <li><a href="#press-releases">Press releases</a></li>
+          <li><a href="#in-the-news">In the News</a></li>
+          <li><a href="#press-releases">Press Releases</a></li>
+          <li><a href="#press-inquiries">Press Inquiries</a></li>
         </ul>
       </nav>
     </div>
@@ -19,7 +20,7 @@
   <section id="in-the-news">
     <section class="container p-t-3 p-b-3">
       <section class="content">
-        <h4>In the news</h4>
+        <h4 class="OptimaLTStd-ExtraBlack">In the News</h4>
         {% for child in this.pagination.items %}
           {{ render_news_article(child, from_index=true) }}
         {% endfor %}
@@ -30,10 +31,23 @@
   <section id="press-releases">
     <section class="container p-t-3 p-b-3">
       <section class="content">
-        <h4>Press Releases</h4>
+        <h4 class="OptimaLTStd-ExtraBlack">Press Releases</h4>
         {% for child in this.pagination.items %}
           {{ render_news_article(child, from_index=true) }}
         {% endfor %}
+      </section>
+    </section>
+  </section>
+
+  <section id="press-inquiries">
+    <section class="container p-t-3 p-b-3">
+      <section class="content">
+        <h4 class="OptimaLTStd-ExtraBlack">Press Inquiries</h4>
+        <article class="press-inquiries-article">
+            <h2>Tim Allik</h2>
+            <p>+1 508-310-3876<br />
+            <a href="mailto:timallik@slotkincommunications.com">timallik@slotkincommunications.com</a></p>
+        </article>
       </section>
     </section>
   </section>

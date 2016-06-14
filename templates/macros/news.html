@@ -1,14 +1,14 @@
 {% macro render_news_article(post, from_index=false) %}
   <article class="news-article">
     {% if from_index %}
-      <h2 class="OptimaLTStd-ExtraBlack">
+      <h2>
         <a href="{{ post.url }}" target="_blank">
           <img src="{{ post.image }}" />
           <span>{{ post.title }}</span>
         </a>
       </h2>
     {% else %}
-      <h2 class="OptimaLTStd-ExtraBlack">
+      <h2>
         <img src="{{ post.image }}" />
         <span>{{ post.title }}</span>
       </h2>
