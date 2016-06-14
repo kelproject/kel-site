@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% from "macros/news.html" import render_news_article %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  {{ render_news_article(this) }}
+{% endblock %}
