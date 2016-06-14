@@ -3,9 +3,21 @@
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {% for child in this.pagination.items %}
-    {{ render_event(child, from_index=true) }}
-  {% endfor %}
+  <div class="hero p-t-2 p-b-2">
+    <div class="hero-wrapper container">
+      <h1 class="OptimaLTStd-ExtraBlack m-t-2 m-b-2">Upcoming Events</h1>
+    </div>
+  </div>
 
-  {{ render_pagination(this.pagination) }}
+  <section id="events">
+    <section class="container p-t-3 p-b-3">
+      <section class="content">
+        {% for child in this.pagination.items %}
+          {{ render_event(child, from_index=true) }}
+        {% endfor %}
+      </section>
+    </section>
+  </section>
+
+  {# {{ render_pagination(this.pagination) }} #}
 {% endblock %}

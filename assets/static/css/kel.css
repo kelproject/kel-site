@@ -180,6 +180,95 @@ a:hover {
   display: block;
 }
 
+/* Subnav */
+.subnav ul {
+  list-style-type: none;
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+.subnav li {
+  display: inline;
+}
+
+.subnav a {
+  color: #fff;
+  padding: 0.2em 1em 0.2em 0;
+  font-size: 1.3rem;
+}
+
+/* Pages */
+
+/* News */
+#press-releases {
+  background: #F4F4F4;
+}
+
+#in-the-news .content,
+#press-releases .content {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+#in-the-news h2,
+#press-releases h2 {
+  line-height: 1.2em;
+}
+
+#in-the-news h4,
+#press-releases h4 {
+  margin-bottom: 1em;
+}
+
+#in-the-news img {
+  max-width: 200px;
+  margin-bottom: .8em;
+}
+
+#press-releases img {
+  display: none;
+}
+
+#in-the-news span,
+#press-releases span {
+  display: block;
+}
+
+.news-article {
+  margin-bottom: 2em;
+}
+
+/* Events */
+.event {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  max-width: 750px;
+  margin: 0 auto 1em;
+}
+
+.event img {
+  max-width: 200px;
+  margin-bottom: 1em;
+}
+
+.event ul {
+  list-style-type: none;
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+.event .meta {
+  text-transform: uppercase;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+
 /* Responsive */
 
 /* Small and up */
@@ -220,6 +309,10 @@ a:hover {
 
   .about {
     width: 65%;
+  }
+
+  .subnav a {
+    padding-left: 1em;
   }
 }
 
@@ -319,5 +412,15 @@ a:hover {
 
   .social-media div {
     font-size: 2.4em;
+  }
+
+  .event .event-img {
+    flex: 0 0 25%;
+    -webkit-flex: 0 0 25%;
+  }
+
+  .event .event-details {
+    flex: 0 0 65%;
+    -webkit-flex: 0 0 65%;
   }
 }

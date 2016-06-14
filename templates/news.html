@@ -2,10 +2,41 @@
 {% from "macros/news.html" import render_news_article %}
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.title }}{% endblock %}
+{% block body_class %}news-page{% endblock %}
 {% block body %}
-  {% for child in this.pagination.items %}
-    {{ render_news_article(child, from_index=true) }}
-  {% endfor %}
+  <div class="hero p-t-2 p-b-2">
+    <div class="hero-wrapper container">
+      <h1 class="OptimaLTStd-ExtraBlack m-t-2 m-b-1">News</h1>
+      <nav class="subnav">
+        <ul>
+          <li><a href="#in-the-news">In the news</a></li>
+          <li><a href="#press-releases">Press releases</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-  {{ render_pagination(this.pagination) }}
+  <section id="in-the-news">
+    <section class="container p-t-3 p-b-3">
+      <section class="content">
+        <h4>In the news</h4>
+        {% for child in this.pagination.items %}
+          {{ render_news_article(child, from_index=true) }}
+        {% endfor %}
+      </section>
+    </section>
+  </section>
+
+  <section id="press-releases">
+    <section class="container p-t-3 p-b-3">
+      <section class="content">
+        <h4>Press Releases</h4>
+        {% for child in this.pagination.items %}
+          {{ render_news_article(child, from_index=true) }}
+        {% endfor %}
+      </section>
+    </section>
+  </section>
+
+  {# {{ render_pagination(this.pagination) }} #}
 {% endblock %}
