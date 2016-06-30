@@ -14,6 +14,10 @@ a:hover {
   color: #3B3B53;
 }
 
+sup {
+  font-size: 12px;
+}
+
 .fa-chevron-right {
   padding-left: 10px;
 }
