@@ -34,7 +34,7 @@ To deploy, run:
 To deploy to production, run:
 
     lektor build
-    gsutil -m rsync -c -d -r $(lektor project-info --output-path) gs://kelproject.com
-    gsutil -m setmeta -h "Cache-Control:private,max-age=0,no-transform" gs://kelproject.com/**
+    gsutil -m rsync -c -d -r $(lektor project-info --output-path) gs://www.kelproject.com
+    gsutil -m setmeta -h "Cache-Control:private,max-age=0,no-transform" gs://www.kelproject.com/**
 
 TODO: improve the `setmeta` command to cache some files.
